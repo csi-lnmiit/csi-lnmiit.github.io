@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact - CSI LNMIIT Student Chapter</title>
+	<link rel="shortcut icon" href="../resources/csi-favicon.png"  />
+	<meta name="description" content="Computer Society Of India LNMIIT Student Chapter" />
+	<meta name="keywords" content="csi lnmiit, csi, lnmiit, Computer Society Of India, The LNM Institute of Information Technology, About, About Us, CSI-LNMIIT, csi about" />
+	<meta name="author" content="Shashwat Dixit" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+  	
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="stylesheet" href="../fonts/fonts.css">	
+</head>
+<body>
+	<nav class="sidebar">
+		<div class="sb-content">
+			<div id="logo" class="text-center"><img alt="[ CSI LNMIIT ]" title="" src="../resources/csi-logo-rr.png"/></div>
+			<a href="../"><span class="glyphicon glyphicon-home"></span>Home</a>
+			<a href="../about/"><span class="glyphicon glyphicon-user"></span>About</a>
+			<a href="../events/"><span class="glyphicon glyphicon-calendar"></span>Events</a>
+			<a class="active" href="#"><span class="glyphicon glyphicon-envelope"></span>Contacts</a>
+			<a href="http://csi-india.org"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
+			<span class="copyright">&copy; CSI LNMIIT 2016</span>
+		</div>
+		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
+	</nav>
+
+	<div class="wrapper">
+		<div class="container">
+		    <div class="row"><div class="title col-sm-12 col-md-12">Contact Us</div></div>
+			<div class="map row" onclick="pointerauto(this)">
+				<iframe class="col-xs-12" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113822.86148797255!2d75.85350135624465!3d26.936342365558875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1476013757560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="row contact-box">
+				<div class="row">
+					<div class="card col-md-4 col-xs-12">
+					<div class="box">
+					<div>
+						<span class="name">Akshat Singhatwadia</span>
+						<span class="no"></span>
+						<span class="email"></span>
+					</div>
+					</div>
+					</div>
+					<div class="card col-md-4 col-xs-12">
+					<div class="box">
+					<div>
+						<span class="name">Shubham Vyas</span>
+						<span class="no"></span>
+						<span class="email"></span>
+					</div>
+					</div>
+					</div>
+					<div class="card col-md-4 col-xs-12">
+					<div class="box">
+					<div>
+						<span class="name">Sonali Gupta</span>
+						<span class="no"></span>
+						<span class="email"></span>
+					</div>
+					</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="image-viewer">
+		<div class="image"><img src=""></div>
+		<div class="name"></div>
+		<div class="post"></div>
+	</div>
+	<!-- <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script> -->
+	<script type="text/javascript">
+		$('#trigger').click(function(){
+			$('.sidebar').toggleClass('sidebar-open');
+			var lanh = $(".image-viewer").css("height");
+			var lanw = $(".image-viewer").css("width");
+			if(parseInt(lanw)>parseInt(lanh))
+			{
+				$('.wrapper').toggleClass('slide-right');
+			}
+		});
+		function pointerauto(e){
+			console.log("hey");
+			$(e).toggleClass('pointer-event')
+		}
+		
+	</script>
+</body>
+</html>

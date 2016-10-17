@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Introduction to Y16 - CSI LNMIIT</title>
+	<link rel="shortcut icon" href="../../resources/csi-favicon.png"  />
+	<meta name="description" content="Computer Society Of India LNMIIT Student Chapter" />
+	<meta name="keywords" content="csi lnmiit, csi, lnmiit, Computer Society Of India, The LNM Institute of Information Technology, Events, Introduction, Y16, CSI-LNMIIT, csi about" />
+	<meta name="author" content="Shashwat Dixit" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+  	
+	<!-- <link rel="stylesheet" href="../../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../../css/sidebar.css">
+	<link rel="stylesheet" href="../../css/eventpage.css">
+	<link rel="stylesheet" href="../../fonts/fonts.css">
+</head>
+<body>
+	<nav class="sidebar">
+		<div class="sb-content">
+			<div id="logo" class="text-center"><img alt="[ CSI LNMIIT ]" title="" src="../../resources/csi-logo-rr.png"/></div>
+			<a href="../../"><span class="glyphicon glyphicon-home"></span>Home</a>
+			<a href="../../about/"><span class="glyphicon glyphicon-user"></span>About</a>
+			<a href="../"><span class="glyphicon glyphicon-calendar"></span>Events</a>
+			<a href="../../contacts/"><span class="glyphicon glyphicon-envelope"></span>Contacts</a>
+			<a href="http://csi-india.org"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
+			<span class="copyright">&copy; CSI LNMIIT 2016</span>
+		</div>
+		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
+	</nav>
+
+	<div class="wrapper">
+		<div class="container">			
+			<div class="landing">
+				<div class="row content">
+					<div class="col-sm-12 col-xs-12 info">
+						<span class="title">Introduction to Y16</span>
+					</div>
+				</div>
+			</div>
+			<div class="pics-box">
+			<div class="row">
+				<div class="picture col-md-6 col-xs-12">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="pics/01.jpg"></div>
+					</div>
+				</div>
+				<div class="picture-info col-md-6 col-xs-12">
+				<span>
+					A fresh beginning remarks oozing of creative ideas and enthusiastic hopes. The CSI­ LNMIIT Student Chapter held its introductory meet, to introduce the hidden zeal of the council and also to introduce the students, to something different they should deal with in the further four years to come. This event was organized on 7th of August, 2016. The newly formed council of the academic session 2016­17 was the one who organized this event. Due to great zest shown by the freshers, the event was held in two lecture halls simultaneously. 
+				</span>
+				</div>
+				<div class="picture col-md-6 col-xs-12 col-md-push-6">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="pics/02.jpg"></div>
+					</div>
+				</div>
+				<div class="picture-info col-md-6 col-xs-12 col-md-pull-6">
+				<span>
+					Initially, the students were  
+					introduced to the hidden motivation and aim of the CSI Council as a whole and then branched out the ways to the  
+					CSI­LNMIIT Student Chapter. After  
+					this briefing, a short exciting quiz  
+					was held on the general computer  
+					science zone and the participation  
+					received was driven by a huge  
+					amount of enthusiasm. Students  
+					enjoyed the team spirit of the quiz.  
+				</span>
+				</div>
+				<div class="picture col-md-6 col-xs-12">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="pics/03.jpg"></div>
+					</div>
+				</div>	
+				<div class="picture-info col-md-6 col-xs-12">
+				<span>
+					The event finally concluded on a motivational speech given by the  
+ex­Chairperson of the council, Pushkal Agarwal who shared his encounter and  
+initiation stages of the council in LNMIIT and how it had advanced in the past  
+years. He also talked about how being in CSI had helped him build an entirely  
+new life and also about the knowledge he had enhanced in his college life. 
+Students not only felt motivated but also were able to build an inner desire of  
+something new and different in their hearts through such an inspirational talk.  
+				</span>
+				</div>
+			</div>			
+			</div>		
+		</div>
+	</div>	
+	<div class="image-viewer">
+		<div class="image"><img src=""></div>
+	</div>
+	<!-- <script type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script> -->
+	<script type="text/javascript">
+		$('#trigger').click(function(){
+			$('.sidebar').toggleClass('sidebar-open');
+			var lanh = $(".image-viewer").css("height");
+			var lanw = $(".image-viewer").css("width");
+			if(parseInt(lanw)>parseInt(lanh))
+			{
+				$('.wrapper').toggleClass('slide-right');
+			}
+		});
+		$('.picture .card .card-image').click(function(event){
+			var source = $(this).children("img").attr("src");
+			$('.image-viewer').children(".image").children("img").attr("src",source);
+			$('.image-viewer').css({
+				'display':'block',
+			});
+
+		});
+
+		$('.image-viewer').click(function(){
+			$('.image-viewer').css({
+				'display':'none',
+			});
+		});
+	</script>
+</body>
+</html>
