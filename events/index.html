@@ -24,8 +24,8 @@
 			<a href="../about/"><span class="glyphicon glyphicon-user"></span>About</a>
 			<a class="active" href="#"><span class="glyphicon glyphicon-calendar"></span>Events</a>
 			<a href="../contacts/"><span class="glyphicon glyphicon-envelope"></span>Contacts</a>
-			<a href="http://csi-india.org" target="_blank"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
-			<a href="https://www.facebook.com/CSIStudentChapterLnmiit/" target="_blank"><img src="../resources/facebook.png"></a>
+			<a class="csi-link" href="http://csi-india.org" target="_blank"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
+			<a class="fb" href="https://www.facebook.com/CSIStudentChapterLnmiit/" target="_blank"><img src="../resources/facebook.png"></a>
 			<span class="copyright">&copy; CSI LNMIIT 2016</span>
 		</div>
 		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
@@ -46,7 +46,7 @@
 					</div>					
 				</div>
 			</div>
-			<div class="event-list">
+			<div id="event-list">
 				<div class="row">
 					<div class="event-info">
 						<div class="col-xs-12 card">
@@ -243,7 +243,7 @@
 				{
 					set = true;
 					$(".card-child").css({
-						"display":"block"
+						opacity: 1
 					});
 				}
 			}

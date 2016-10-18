@@ -65,6 +65,13 @@
 	background-color: rgb(42, 196, 234);
 }
 
+.sidebar a.fb:hover , a.fb:focus{
+	-moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  	transform: scale(1.1);
+  	background-color: #fff;
+}
+
 .sidebar .copyright {
 	position: absolute;
 	top: 100%;
