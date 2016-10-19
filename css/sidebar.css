@@ -25,6 +25,17 @@
 	border-right: solid 1px #eee;
 }
 
+.sb-content1 {
+	position: absolute;
+	top: 0;
+	right: 60px;
+	background: #fff;
+	width: 200px;
+	height: 100%;
+	border-right: solid 1px #eee;
+}
+
+
 .sidebar a,.copyright {
 	color: #666;
 	display: block;
@@ -32,7 +43,7 @@
 	outline: none;
 	border-bottom:solid 1px #efefef;
 	font-size: 0.8em;
-	font-family:"OpenSansRegular";
+	font-family:"Raleway";
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 1px;
@@ -52,6 +63,13 @@
 .sidebar .active{
 	color: #fff !important;
 	background-color: rgb(42, 196, 234);
+}
+
+.sidebar a.fb:hover , a.fb:focus{
+	-moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  	transform: scale(1.1);
+  	background-color: #fff;
 }
 
 .sidebar .copyright {
@@ -85,6 +103,27 @@
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
     transform-origin: top left;
+}
+
+#trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 11;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	width: 60px;
+	height: 100%;
+	line-height: 40px;
+	cursor: pointer;
+	background: #FFFFFF url('../resources/burger.png') center center no-repeat;
+	box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
 }
 
 #trigger {
