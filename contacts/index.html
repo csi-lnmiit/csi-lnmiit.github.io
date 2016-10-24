@@ -34,7 +34,7 @@
 		<div class="container">
 		    <div class="row"><div class="title col-sm-12 col-md-12">Contact Us</div></div>
 			<div class="map row" onclick="pointerauto(this)">
-				<iframe class="col-xs-12" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113822.86148797255!2d75.85350135624465!3d26.936342365558875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1476013757560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe class="col-xs-12" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28455.72382022486!2d75.90678075548664!3d26.93630888851343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1477317892299" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<div class="row contact-box">
 				<div class="row">
@@ -69,18 +69,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="image-viewer">
-		<div class="image"><img src=""></div>
-		<div class="name"></div>
-		<div class="post"></div>
-	</div>
 	<!-- <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script> -->
 	<script type="text/javascript">
 		$('#trigger').click(function(){
 			$('.sidebar').toggleClass('sidebar-open');
-			var lanh = $(".image-viewer").css("height");
-			var lanw = $(".image-viewer").css("width");
-			if(parseInt(lanw)>parseInt(lanh))
+			if($(window).width()>$(window).height())
 			{
 				$('.wrapper').toggleClass('slide-right');
 			}

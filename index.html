@@ -67,7 +67,8 @@
 	<script type="text/javascript">
 		$('#trigger').click(function(){
 			$('.sidebar').toggleClass('sidebar-open');
-			$('.wrapper').toggleClass('slide-right');
+			if($(window).width() > $(window).height())
+				$('.wrapper').toggleClass('slide-right');
 		});
 	</script>
 </body>

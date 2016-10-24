@@ -1,5 +1,6 @@
 body{
 	overflow-x: hidden;
+	background-color: #fff;
 }
 .wrapper{
 	z-index: 5;
@@ -46,6 +47,12 @@ body{
 	text-align: center;
 	color: #fff;
 }
+@media(orientation:portrait)
+{
+	.wrapper .container .title{
+		font-size: 3em;		
+	}
+}
 .wrapper .title{
 	background: rgb(228, 241, 254);
 	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
@@ -56,8 +63,14 @@ body{
 .wrapper .container .row .col-md-4,.col-sm-12,.col-md-12,
 .col-md-6,.col-xs-12,.col-sm-6{padding:0;}
 
-.map{
-	pointer-events: none;
+@media(orientation:portrait)
+{
+	.map{
+		pointer-events: none;
+	}
+	#google-map{
+		height: 100vh;
+	}
 }
 
 .pointer-event{
@@ -71,6 +84,15 @@ body{
 .wrapper .contact-box .card{
 	height: 200px;
 }
+
+@media(orientation:portrait)
+{
+	.wrapper .contact-box .card{
+		height: 400px;
+		margin: 20px 0px;
+	}
+}
+
 .wrapper .contact-box .card .box{
 	width: 90%;
 	height: 90%;
@@ -88,34 +110,16 @@ body{
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-.image-viewer{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10,10,10,0.5);
-	z-index: 100;
-	display: none;
+
+@media (orientation:landscape)
+{
+	.name,.no,.email{
+		font-size: 1.2em;
+	}
 }
-.image-viewer .image{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.image-viewer .image img{
-	position: absolute;
-	z-index: 5;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	box-shadow: 0px 0px 5px #333;
-	border-radius: 5px;
-	max-width: 100%;
-	max-height: 100%;
-	min-height: 300px;
-	min-width: 300px;
+@media (orientation:portrait)
+{
+	.name,.no,.email{
+		font-size: 2.5em;
+	}
 }

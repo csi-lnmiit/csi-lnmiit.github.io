@@ -74,12 +74,14 @@
 
 .sidebar .copyright {
 	position: absolute;
-	top: 100%;
 	width: 100%;
 	left: 0;
-	margin-top: -50px;
+	bottom: 0;
 	border-top: solid 1px #efefef;
 	border-bottom: 0px;
+}
+.sidebar .fb {
+	border: 0;
 }
 
 #logo{border-bottom:solid 1px #eee;}
@@ -153,14 +155,14 @@
 @media (orientation:portrait)
 {
 	.sidebar {
-		left: -300px;
-		width: 360px;
+		left: -50%;
+		width: calc(50% + 60px);
 	}
 	.sb-content{
-		width: 300px;
+		width: calc(100% - 60px);
 	}
 	.sidebar a,.copyright{
-		font-size: 1.2em;
+		font-size: 2em;
 	}
 	#trigger{
 		background: transparent url('../resources/burger.png') center 20px no-repeat;

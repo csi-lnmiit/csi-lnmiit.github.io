@@ -103,14 +103,14 @@ a:focus {outline: none;}
 @media (orientation:portrait)
 {	
 	.landing-text{
-		font-size: 26px;
+		font-size: 4em;
 		text-transform: uppercase;
 		font-family:"Raleway","MontserratRegular";
 		color: #fff;
 	}
 
 	.landing-text-2{
-		font-size: 22px;
+		font-size: 3em;
 		font-family:"Raleway","MontserratRegular";
 		color: #fff;
 	}
@@ -119,31 +119,31 @@ a:focus {outline: none;}
 		color:rgb(42, 196, 234);
 		background-color: #fff;
 		border:0px;
-		margin: 20px 10px;
+		margin: 50px 10px;
 		padding: 20px 0px;
-		font-size: 2em;
-		min-width: 200px;
+		font-size: 2.2em;
+		min-width: 300px;
 	}
 }
-@media (min-width: 480px)
+@media (min-width: 480px) and (orientation:landscape)
 {
 	.landing-text{font-size: 26px;}
 	.landing-text-2{font-size: 22px;}
 }
 
-@media (min-width: 600px)
+@media (min-width: 600px) and (orientation:landscape)
 {
 	.landing-text{font-size: 30px;}
 	.landing-text-2{font-size: 26px;}
 }
 
-@media (min-width: 800px)
+@media (min-width: 800px) and (orientation:landscape)
 {
 	.landing-text{font-size: 34px;}
 	.landing-text-2{font-size: 28px;}
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1200px) and (orientation:landscape)
 {
 	.landing-text{font-size: 40px;}
 	.landing-text-2{font-size: 32px;}
