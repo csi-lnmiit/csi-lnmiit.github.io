@@ -176,7 +176,8 @@ a:focus {outline: none;}
 @media (orientation:landscape){
 
 	.wrapper .content{background-color: rgba(42, 196, 234, 0.8);}
-	.bg-img1{
+	/*old background properties*/
+	/*.bg-img1{
 		z-index: -1;
 		background-image: url("../resources/pattern01.2.jpg");
 		background-size: cover;
@@ -199,14 +200,43 @@ a:focus {outline: none;}
 		background-image: url("../resources/bg9.2.jpg");
 		background-size: cover;
 		animation: faded 20s linear 15s infinite;
+	}*/
+
+	/*new background properties*/
+	.bg-img2{
+		z-index: -2;
+		background-image: url("../resources/bg6.2.jpg");
+		background-size: cover;
+		animation: faded 15s linear 0s infinite;
+	}
+	.bg-img3{
+		z-index: -3;
+		background-image: url("../resources/bg8.2.jpg");
+		background-size: cover;
+		animation: faded 15s linear 5s infinite;
+	}
+	.bg-img4{
+		z-index: -4;
+		background-image: url("../resources/bg9.2.jpg");
+		background-size: cover;
+		animation: faded 15s linear 10s infinite;
 	}
 }
-
-@keyframes faded{
+/*old faded animation*/
+/*@keyframes faded{
 	0% { opacity: 1; }
 	25% { opacity: 1; }
 	30% { opacity: 0; }
 	95% { opacity: 0; }
+	100% { opacity: 1; }
+}*/
+
+/*new faded animation*/
+@keyframes faded{
+	0% { opacity: 1; }
+	33% { opacity: 1; }
+	40% { opacity: 0; }
+	92% { opacity: 0; }
 	100% { opacity: 1; }
 }
 /*	Background End */
