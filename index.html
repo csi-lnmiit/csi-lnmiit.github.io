@@ -17,6 +17,27 @@
 </head>
 <body>
 
+
+	<div class="launch">
+	<div class="container">
+		<div class="row wrap">
+			<!-- <div id="csi">Computer Society Of India</div>
+			<div id="lnmiit"> LNMIIT Student Chapter</div> -->
+			<div id="csi" class="col-sm-12">CSI LNMIIT</div>
+			<div class="text-wrap col-sm-12">
+				<div class="row">
+					<div class="text-wrap-text col-sm-12" id="t1">WHERE TECHNOLOGY MATTERS</div>
+					<div class="text-wrap-text col-sm-12" id="t2">TALENT AND SKILLS EXCELS</div>
+					<div class="text-wrap-text col-sm-12" id="t3">WHERE LEARNING HAPPENS</div>
+				</div>
+			</div>
+			<button id="launch-btn">Launch Website</button>
+			
+		</div>
+	</div>
+	</div>
+
+
 	<nav class="sidebar">
 		<div class="sb-content">
 			<div id="logo" class="text-center"><img alt="[ CSI LNMIIT ]" title="" src="resources/csi-logo-rr.png"/></div>
@@ -74,6 +95,11 @@
 			$('.sidebar').toggleClass('sidebar-open');
 			if($(window).width() > $(window).height())
 				$('.wrapper').toggleClass('slide-right');
+		});
+		$('#launch-btn').click(function(){
+			$('.launch').css({
+				"top":"-105%"
+			});
 		});
 	</script>
 </body>
