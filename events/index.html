@@ -28,7 +28,12 @@
 			<a class="fb" href="https://www.facebook.com/CSIStudentChapterLnmiit/" target="_blank"><img src="../resources/facebook.png"></a>
 			<span class="copyright">&copy; CSI LNMIIT 2016</span>
 		</div>
-		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
+		<div id="trigger">
+			<p id="sb-title">csi-lnmiit</p>
+			<div id="trigger-image">
+				<img src="../resources/burger.png">
+			</div>
+		</div>
 	</nav>
 
 	<div class="wrapper">
@@ -173,17 +178,17 @@
 				<div class="row">					
 					<div class="event-main-block">
 						<div class="block-1 manage-height">
-							<a href="introduction-y16/">
-							<div class="event-block">
-								<div id="bl1" class="event-card">
-									<img src="introduction-y16/pics/01.jpg">
-									<div class="event-info" id="overlay1">
-									<div class="event-center">
-										<span class="event-title">Introduction to Y-16</span>
+							<a href="teachers-day/">
+								<div class="event-block">
+									<div id="bl3" class="event-card">
+										<img src="teachers-day/pics/15.jpg">
+										<div class="event-info" id="overlay3">
+										<div class="event-center">
+											<span class="event-title">Teacher's Day Celebration</span>
+										</div>
+										</div>
 									</div>
-									</div>
-								</div>
-							</div>
+								</div>	
 							</a>
 						</div>
 						<div class="block-2 manage-height">
@@ -201,19 +206,19 @@
 							</a>
 						</div>
 						<div class="block-3 manage-height">
-							<a href="teachers-day/">
-								<div class="event-block">
-									<div id="bl3" class="event-card">
-										<img src="teachers-day/pics/15.jpg">
-										<div class="event-info" id="overlay3">
-										<div class="event-center">
-											<span class="event-title">Teacher's Day Celebration</span>
-										</div>
-										</div>
+							<a href="introduction-y16/">
+							<div class="event-block">
+								<div id="bl1" class="event-card">
+									<img src="introduction-y16/pics/01.jpg">
+									<div class="event-info" id="overlay1">
+									<div class="event-center">
+										<span class="event-title">Introduction to Y-16</span>
 									</div>
-								</div>	
+									</div>
+								</div>
+							</div>
 							</a>
-						</div>	
+						</div>
 					</div>
 				</div>
 				</div>
@@ -222,7 +227,7 @@
 	</div>	
 	<!-- <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script> -->
 	<script type="text/javascript">
-		$('#trigger').click(function(){
+		$('#trigger-image').click(function(){
 			$('.sidebar').toggleClass('sidebar-open');
 			var lanh = $(".landing").css("height");
 			var lanw = $(".landing").css("width");
@@ -234,7 +239,6 @@
 		var y;
 		var set = false;
 		var height = $('.landing').css("height");
-		console.log(height);
 		function show_list(){
 			y = window.pageYOffset;	
 			if(set == false)

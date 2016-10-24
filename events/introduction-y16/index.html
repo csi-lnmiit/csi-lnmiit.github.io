@@ -26,7 +26,12 @@
 			<a href="http://csi-india.org"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
 			<span class="copyright">&copy; CSI LNMIIT 2016</span>
 		</div>
-		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
+		<div id="trigger">
+			<p id="sb-title">csi-lnmiit</p>
+			<div id="trigger-image">
+				<img src="../../resources/burger.png">
+			</div>
+		</div>
 	</nav>
 
 	<div class="wrapper">
@@ -93,7 +98,7 @@ something new and different in their hearts through such an inspirational talk.
 	</div>
 	<!-- <script type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script> -->
 	<script type="text/javascript">
-		$('#trigger').click(function(){
+		$('#trigger-image').click(function(){
 			$('.sidebar').toggleClass('sidebar-open');
 			var lanh = $(".image-viewer").css("height");
 			var lanw = $(".image-viewer").css("width");

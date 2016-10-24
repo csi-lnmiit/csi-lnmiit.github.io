@@ -27,7 +27,12 @@
 			<span class="copyright">&copy; CSI LNMIIT 2016</span>
 			<a class="fb" href="https://www.facebook.com/CSIStudentChapterLnmiit/" target="_blank"><img src="../resources/facebook.png"></a>
 		</div>
-		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
+		<div id="trigger">
+			<p id="sb-title">csi-lnmiit</p>
+			<div id="trigger-image">
+				<img src="../resources/burger.png">
+			</div>
+		</div>
 	</nav>
 
 	<div class="wrapper">
@@ -43,7 +48,36 @@
 				</div>
 			</div>
 			<div class="row pics-box">
-				<div class="box-title col-sm-12">Our Team</div>
+				<div class="box-title col-sm-12">Faculty Mentors</div>				
+				<div class="free-space col-sm-12"></div>
+				<div class="picture col-md-3 col-sm-4 col-xs-6">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="../resources/faculty/Dr-Sakthi-Balan.png"></div>
+					<div class="card-name col-sm-12">Dr. Sakthi Balan</div>
+					</div>
+				</div>
+				<div class="picture col-md-3 col-sm-4 col-xs-6">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="../resources/faculty/Dr.-Subrat-K-Dash.png"></div>
+					<div class="card-name col-sm-12">Dr. Subrat K Dash</div>
+					</div>
+				</div>
+				<div class="picture col-md-3 col-sm-4 col-xs-6">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="../resources/faculty/Mr.-Vikas-Bajpai.jpg"></div>
+					<div class="card-name col-sm-12">Mr. Vikas Bajpai</div>
+					</div>
+				</div>
+				<div class="picture col-md-3 col-sm-4 col-xs-6">
+					<div class="card row">
+					<div class="card-image col-sm-12"><img class="cdi" src="../resources/faculty/Mr.-Mukesh-K-Jadon.jpeg"></div>
+					<div class="card-name col-sm-12">Mr. Mukesh K Jadon</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row pics-box">
+				<div id="toBeFixed" class="box-title col-sm-12">Our Team</div>
 				<div class="free-space col-sm-12"></div>
 				<div class="picture col-md-3 col-sm-4 col-xs-6">
 					<div class="card row">
@@ -145,8 +179,8 @@
 				</div>
 				<div class="picture col-md-3 col-sm-4 col-xs-6">
 					<div class="card row">
-					<div class="card-image col-sm-12"><img src="../resources/team/17gaurav-khatri.jpg"></div>
-					<div class="card-name col-sm-12">Gaurav Khatri</div>
+					<div class="card-image col-sm-12"><img src="../resources/team/17gourav-khatri.jpg"></div>
+					<div class="card-name col-sm-12">Gourav Khatri</div>
 					<div class="card-post col-sm-12">Event Planner</div>
 					</div>					
 				</div>
@@ -399,7 +433,7 @@
 
 	<!-- <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script> -->
 	<script type="text/javascript">
-		$('#trigger').click(function(){
+		$('#trigger-image').click(function(){
 			$('.sidebar').toggleClass('sidebar-open');
 			var lanh = $(".image-viewer").css("height");
 			var lanw = $(".image-viewer").css("width");
@@ -425,17 +459,18 @@
 		});
 		var y;
 		var elem = document.getElementById('paralax');
-		var pics_box_title = $('.box-title');
+		var pics_box_title = $('#toBeFixed');
+		var	pics_box_top = pics_box_title.offset().top;
 		var fix = false;
 		function scroll_effects(){
 			y = window.pageYOffset;
 			elem.style.top = -1*y*0.5 + 'px';
-			if(parseInt(y) >= 550 && !fix)
+			if(parseInt(y) >= pics_box_top && !fix)
 			{
 				fix = true;
 				pics_box_title.addClass("fix");
 			}			
-			else if(parseInt(y) < 550 && fix)
+			else if(parseInt(y) < pics_box_top && fix)
 			{
 				fix = false;
 				pics_box_title.removeClass("fix");

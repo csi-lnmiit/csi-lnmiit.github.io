@@ -29,7 +29,12 @@
 			<a class="fb" href="https://www.facebook.com/CSIStudentChapterLnmiit/" target="_blank"><img src="resources/facebook.png"></a>
 		</div>
 		
-		<div id="trigger"><p id="sb-title">csi-lnmiit</p></div>
+		<div id="trigger">
+			<p id="sb-title">csi-lnmiit</p>
+			<div id="trigger-image">
+				<img src="resources/burger.png">
+			</div>
+		</div>
 	</nav>
 
 	<div class="wrapper">
@@ -65,7 +70,7 @@
 
 	<!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> -->
 	<script type="text/javascript">
-		$('#trigger').click(function(){
+		$('#trigger-image').click(function(){
 			$('.sidebar').toggleClass('sidebar-open');
 			if($(window).width() > $(window).height())
 				$('.wrapper').toggleClass('slide-right');

@@ -48,7 +48,7 @@ a:focus {outline: none;}
 	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
 }
 .slide-right{
-	width: calc(100% + 200px);
+	width: 100%;
 	margin-left: 200px;
 }
 
@@ -277,6 +277,19 @@ a:focus {outline: none;}
 	border-radius: 5px;
 	max-width: 100%;
 	max-height: 100%;
-	min-height: 300px;
-	min-width: 300px;
+	
+	
+}
+
+@media (orientation:landscape)
+{
+	.image-viewer .image img{	
+		min-height: 50%;
+	}
+}
+@media (orientation:portrait)
+{
+	.image-viewer .image img{	
+		min-width: 70%;
+	}
 }
