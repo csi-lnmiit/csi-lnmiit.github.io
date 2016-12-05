@@ -13,9 +13,50 @@
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/sidebar.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/magic.min.css">
+	<link rel="stylesheet" href="css/award.css">
 	<link rel="stylesheet" href="fonts/fonts.css">	
 </head>
 <body>
+
+<!-- csi award -->
+
+	<div id="award-wrapper">
+		<div class="magictime tinUpIn" id="award">
+			<div id="closebtn"></div>
+			<svg viewBox="0 0 800 600">
+			  <symbol id="s-text">
+			    <text text-anchor="middle" x="50%" y="30%" class="text--line2">
+			      Awarded
+			    </text>
+			    <text text-anchor="middle" x="50%" y="50%" class="text--line">
+			      Best Accredited
+			    </text>
+			    <text text-anchor="middle" x="50%" y="65%" class="text--line">
+			      Student Branch
+			    </text>
+			    <text text-anchor="middle" x="50%" y="80%" class="text--line">
+			      by CSI INDIA
+			    </text>	    
+			  </symbol>
+			  
+			  <g class="g-ants">
+			    <use xlink:href="#s-text"
+			      class="text-copy"></use>     
+			    <use xlink:href="#s-text"
+			      class="text-copy"></use>     
+			    <use xlink:href="#s-text"
+			      class="text-copy"></use>     
+			    <use xlink:href="#s-text"
+			      class="text-copy"></use>     
+			    <use xlink:href="#s-text"
+			      class="text-copy"></use>     
+			  </g>
+			</svg>
+		</div>
+	</div>
+
+<!-- sidebar -->
 
 	<nav class="sidebar">
 		<div class="sb-content">
@@ -78,6 +119,11 @@
 		$('#launch-btn').click(function(){
 			$('.launch').css({
 				"top":"-105%"
+			});
+		});		
+		$('#closebtn').click(function(){
+			$('#award-wrapper').css({
+				"top":"-200%"
 			});
 		});
 	</script>
